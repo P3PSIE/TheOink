@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AC ",
+    "AB ",
+    " B "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    },
+    "C":
+    {
+      "item": "minecraft:porkchop"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_wood_axe",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AB",
+        " CB",
+        "C  "
+    ],
+
+    "key":
+    {
+        "A":
+        {
+            "item": "minecraft:diamond"
+        },
+        "B":
+        {
+            "item": "minecraft:porkchop"
+        },
+        "C":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+
+    "result":
+    {
+        "item": "theoink:oink_basic_crusher_diamond",
+        "count": 1
+    }
+}

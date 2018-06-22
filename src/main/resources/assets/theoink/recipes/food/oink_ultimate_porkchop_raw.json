@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "HBC",
+    "D E",
+    "FGA"
+  ],
+
+  "key":
+  {
+    "A":
+  {
+    "item": "theoink:oink_pig_iron_dust"
+  },
+    "B":
+    {
+      "item": "theoink:oink_iron_porkchop"
+    },
+    "C":
+    {
+      "item": "theoink:oink_pig_gold_dust"
+    },
+    "D":
+    {
+      "item": "theoink:oink_gold_porkchop"
+    },
+    "E":
+    {
+      "item": "theoink:oink_diamond_porkchop"
+    },
+    "F":
+    {
+      "item": "theoink:oink_pig_diamond_dust"
+    },
+    "G":
+    {
+      "item": "minecraft:porkchop"
+    },
+    "H":
+    {
+      "item": "theoink:oink_minced_pork"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_ultimate_porkchop_raw",
+    "count": 1
+  }
+}

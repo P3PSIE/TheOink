@@ -1,0 +1,16 @@
+[
+{
+  "modid": "theoink",
+  "name": "The Oink",
+  "description": "A mod that incoporates everything piggy!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/P3PSIE/The_Oink",
+  "updateUrl": "",
+  "authorList": ["P3PSIE"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "assets/theoink/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

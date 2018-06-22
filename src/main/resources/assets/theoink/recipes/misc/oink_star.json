@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "theoink:oink_diamond"
+    },
+    "B":
+    {
+      "item": "theoink:oink_minced_pork"
+    },
+    "C":
+    {
+      "item": "minecraft:nether_star"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_star",
+    "count": 1
+  }
+}

@@ -1,0 +1,129 @@
+#English US language file for The Oink Mod
+
+#*******Ref Strings*******
+oinkwand.strings.pigsalive=Bacon and Sausage already exist in this world, they are too special to exist more than once!
+oinkwand.strings.nonspawn=Sorry Bacon and Sausage can only spawn in the Overworld!
+
+#*******Tab Config*******
+itemGroup.theoink=The Oink
+theoink.config.title=The Oink Config
+
+#*******Misc*******
+press.for.info.name=Press %s for more information
+
+#*******Ingots********
+item.oink_iron_ingot.name=Oink Iron Ingot
+item.oink_gold_ingot.name=Oink Gold Ingot
+item.oink_copper_ingot.name=Oink Copper Ingot
+
+#*******Dusts*******
+item.oink_iron_dust.name=Oink Iron Dust
+item.oink_gold_dust.name=Oink Gold Dust
+item.oink_pig_iron_dust.name=Oink Pig Iron Dust
+item.oink_pig_gold_dust.name=Oink Pig Gold Dust
+item.oink_diamond_dust.name=Oink Diamond Dust
+item.oink_pig_diamond_dust.name=Oink Pig Diamond Dust
+
+#******Items******
+item.oink_wand.name=Oink Wand
+item.oink_diamond.name=Oink Diamond
+item.oink_star.name=Oink Star
+
+#*****Tools******
+#*******Wooden Tools*******
+item.oink_wood_pick.name=Oink Wood Pickaxe
+item.oink_wood_hoe.name=Oink Wood Hoe
+item.oink_wood_shovel.name=Oink Wood Shovel
+item.oink_wood_sword.name=Oink Wood Sword
+item.oink_wood_axe.name=Oink Wood Axe
+
+#*******Iron Tools*******
+item.oink_iron_pick.name=Oink Iron Pickaxe
+item.oink_iron_hoe.name=Oink Iron Hoe
+item.oink_iron_shovel.name=Oink Iron Shovel
+item.oink_iron_sword.name=Oink Iron Sword
+item.oink_iron_axe.name=Oink Iron Axe
+
+#*******Gold Tools*******
+item.oink_gold_pick.name=Oink Gold Pickaxe
+item.oink_gold_axe.name=Oink Gold Axe
+item.oink_gold_hoe.name=Oink Gold Hoe
+item.oink_gold_shovel.name=Oink Gold Shovel
+item.oink_gold_sword.name=Oink Gold Sword
+item.oink_gold_axe.name=Oink Gold Axe
+
+#*******Diamond Tools*******
+item.oink_diamond_pick.name=Oink Diamond Pickaxe
+item.oink_diamond_axe.name=Oink Diamond Axe
+item.oink_diamond_hoe.name=Oink Diamond Hoe
+item.oink_diamond_shovel.name=Oink Diamond Shovel
+item.oink_diamond_sword.name=Oink Diamond Sword
+item.oink_diamond_axe.name=Oink Diamond Axe
+
+#*******Other Tools*******
+item.oink_basic_crusher.name=Oink Crusher
+item.oink_basic_crusher_gold.name=Oink Golden Crusher
+item.oink_basic_crusher_diamond.name=Oink Diamond Crusher
+item.oink_basic_masher.name=Oink Meat Masher
+item.oink_basic_masher_gold.name=Oink Golden Meat Masher
+item.oink_basic_masher_diamond.name=Oink Diamond Meat Masher
+
+#*******Blocks*******
+tile.oink_iron_ore.name=Oink Iron Ore
+tile.oink_gold_ore.name=Oink Gold Ore
+tile.oink_copper_ore.name=Oink Copper Ore
+tile.oink_diamond_ore.name=Oink Diamond Ore
+tile.oinkanite.name=Oinkanite
+tile.oinkanot.name=Oinkanot
+
+#*******Entities*******
+entity.oink_bacon.name=Bacon
+entity.oink_sausage.name=Sausage
+
+#*******Foods*******
+item.oink_ultimate_porkchop.name=§1T§3h§2e §4U§5l§6t§9i§am§ba§ct§ee §cP§9o§6r§4k§ec§1h§5o§3p§r
+item.oink_ultimate_porkchop_raw.name=§1T§3h§2e §4U§5l§6t§9i§am§ba§ct§ee §cP§9o§6r§4k§ec§1h§5o§3p§r (§6R§aa§cw)
+item.oink_iron_porkchop.name=§7Iron Pork Chop
+item.oink_iron_porkchop_raw.name=§7Raw Iron Pork Chop
+item.oink_gold_porkchop.name=§eGold Pork Chop
+item.oink_gold_porkchop_raw.name=§eRaw Gold Pork Chop
+item.oink_diamond_porkchop.name=§dDiamond Pork Chop
+item.oink_diamond_porkchop_raw.name=§dRaw Diamond Pork Chop
+item.oink_minced_pork.name=Oink Minced Pork
+
+#*******Armors********
+#*******Wood Armors********
+item.oink_wood_helmet.name=Oink Wood Helmet
+item.oink_wood_chestplate.name=Oink Wood Chestplate
+item.oink_wood_leggings.name=Oink Wood Legggings
+item.oink_wood_boots.name=Oink Wood Boots
+#*******Iron Armors********
+item.oink_iron_helmet.name=Oink Iron Helmet
+item.oink_iron_chestplate.name=Oink Iron Chestplate
+item.oink_iron_leggings.name=Oink Iron Legggings
+item.oink_iron_boots.name=Oink Iron Boots
+
+#*******Gold Armors********
+item.oink_gold_helmet.name=Oink Gold Helmet
+item.oink_gold_chestplate.name=Oink Gold Chestplate
+item.oink_gold_leggings.name=Oink Gold Legggings
+item.oink_gold_boots.name=Oink Gold Boots
+
+#*******Diamond Armors********
+item.oink_diamond_helmet.name=Oink Diamond Helmet
+item.oink_diamond_chestplate.name=Oink Diamond Chestplate
+item.oink_diamond_leggings.name=Oink Diamond Legggings
+item.oink_diamond_boots.name=Oink Diamond Boots
+
+#*******Crops********
+item.pork_Seed.name=Pork Seed
+
+#*******Potions********
+oinkfly=Oink Flight
+
+#*******Commands********
+commands.theoink.usage=/oink
+commands.theoink.killpigs.usage=/theoink killpigs
+commands.theoink.killpigs.passed=Thanks, Bacon and Sausage will now despawn!
+commands.theoink.killpigs.failed=Oops that failed, please check the logs!
+commands.theoink.killpigs.output=RIP, press 'F' for the poor piggies :'(

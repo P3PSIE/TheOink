@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "theoink:oink_diamond"
+    },
+    "B":
+    {
+      "item": "theoink:oink_gold_chestplate"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_diamond_chestplate",
+    "count": 1
+  }
+}

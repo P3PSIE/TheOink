@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    "AAA",
+    "ABA"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "B":
+    {
+      "item": "minecraft:porkchop"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_wood_helmet",
+    "count": 1
+  }
+}

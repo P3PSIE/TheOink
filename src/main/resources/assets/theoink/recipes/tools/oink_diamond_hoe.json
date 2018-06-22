@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "AA ",
+    " B ",
+    " B "
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "theoink:oink_diamond"
+    },
+    "B":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_diamond_hoe",
+    "count": 1
+  }
+}

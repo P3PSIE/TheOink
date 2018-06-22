@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AC",
+        " BA",
+        "B  "
+    ],
+
+    "key":
+    {
+        "A":
+                {
+                    "item": "minecraft:iron_block"
+                },
+        "B":
+                {
+                    "item": "minecraft:stick"
+                },
+        "C":
+                {
+                    "item": "theoink:oink_star"
+                }
+    },
+
+    "result":
+    {
+        "item": "theoink:oink_wand",
+        "count": 1
+    }
+}

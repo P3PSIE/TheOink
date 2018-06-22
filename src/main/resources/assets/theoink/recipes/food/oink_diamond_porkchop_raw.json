@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "theoink:oink_diamond"
+    },
+    "B":
+    {
+      "item": "theoink:oink_gold_porkchop_raw"
+    },
+    "C":
+    {
+      "item": "theoink:oink_pig_diamond_dust"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_diamond_porkchop_raw",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+
+  "key":
+  {
+    "A":
+    {
+      "item": "minecraft:diamond"
+    },
+    "B":
+    {
+      "item": "theoink:oink_minced_pork"
+    }
+  },
+
+  "result":
+  {
+    "item": "theoink:oink_diamond",
+    "count": 1
+  }
+}
