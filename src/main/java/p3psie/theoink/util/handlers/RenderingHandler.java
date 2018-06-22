@@ -6,14 +6,17 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import p3psie.theoink.entities.OinkBacon;
 import p3psie.theoink.entities.OinkSausage;
+import p3psie.theoink.entities.TestPig;
 import p3psie.theoink.entities.render.RenderBacon;
 import p3psie.theoink.entities.render.RenderSausage;
+import p3psie.theoink.entities.render.RenderTest;
 
 public class RenderingHandler {
 
     public static void init(){
         regBaconRender();
         regSausageRender();
+        regTestRender();
     }
 
     public static void regBaconRender(){
@@ -30,6 +33,15 @@ public class RenderingHandler {
             @Override
             public Render<? super OinkSausage> createRenderFor(RenderManager manager) {
                 return new RenderSausage(manager);
+            }
+        });
+    }
+
+    public static void regTestRender(){
+        RenderingRegistry.registerEntityRenderingHandler(TestPig.class, new IRenderFactory<TestPig>() {
+            @Override
+            public Render<? super TestPig> createRenderFor(RenderManager manager) {
+                return new RenderTest(manager);
             }
         });
     }

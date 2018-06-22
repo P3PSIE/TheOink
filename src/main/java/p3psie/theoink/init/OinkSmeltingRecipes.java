@@ -30,8 +30,6 @@ public class OinkSmeltingRecipes {
         GameRegistry.addSmelting(OinkItems.OINK_DIAMOND_PORKCHOP_RAW, new ItemStack(OinkItems.OINK_DIAMOND_PORKCHOP, 1, 0), 0.5F);
         GameRegistry.addSmelting(OinkItems.OINK_ULTIMATE_PORKCHOP_RAW, new ItemStack(OinkItems.OINK_ULTIMATE_PORKCHOP, 1, 0), 3.0F);
 
-
-
         //Oink Stuff to MC Stuff
         GameRegistry.addSmelting(OinkItems.OINK_IRON_INGOT, new ItemStack(Items.IRON_INGOT, 2), 1.8F);
     }

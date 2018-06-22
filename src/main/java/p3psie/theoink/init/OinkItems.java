@@ -14,9 +14,6 @@ import p3psie.theoink.items.OinkWand;
 import p3psie.theoink.items.food.*;
 import p3psie.theoink.items.tools.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class OinkItems {
 
     //Materials
@@ -35,6 +32,7 @@ public class OinkItems {
     //Items
     public static OinkItemBase OINK_DIAMOND = new OinkItemBase("oink_diamond");
     public static OinkItemBase OINK_STAR = new OinkItemBase("oink_star");
+    public static OinkCarrots OINK_DIAMOND_CARROT = new OinkCarrots("oink_diamond_carrot", 20);
 
     //Dusts
     public static OinkItemOre OINK_IRON_DUST = new OinkItemOre("oink_iron_dust", "oinkIronDust");
@@ -132,6 +130,7 @@ public class OinkItems {
                 //MISC ITEMS
                 OINK_DIAMOND,
                 OINK_STAR,
+                OINK_DIAMOND_CARROT,
 
                 //DUSTS
                 OINK_IRON_DUST,
@@ -220,6 +219,7 @@ public class OinkItems {
         //MISC ITEMS
         OINK_DIAMOND.registerModels();
         OINK_STAR.registerModels();
+        OINK_DIAMOND_CARROT.registerModels();
 
         //DUSTS
         OINK_IRON_DUST.registerModels();

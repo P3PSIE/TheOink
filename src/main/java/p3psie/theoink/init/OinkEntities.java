@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 import p3psie.theoink.TheOink;
 import p3psie.theoink.entities.OinkBacon;
 import p3psie.theoink.entities.OinkSausage;
+import p3psie.theoink.entities.TestPig;
 
 
 public class OinkEntities {
@@ -13,6 +14,7 @@ public class OinkEntities {
     public static void entityReg(){
         registerEntities("oink_bacon", OinkBacon.class, OinkBacon.BACON_ID, 50, OinkBacon.eggColour1, OinkBacon.eggColour2);
         registerEntities("oink_sausage", OinkSausage.class, OinkSausage.SAUSAGE_ID, 50, OinkSausage.eggColour1, OinkSausage.eggColour2);
+        registerEntities("oink_test", TestPig.class, 201, 50, 16746909, 16740008);
     }
 
     public static void registerEntities(String name, Class<? extends Entity> entity, int id, int range, int colour1, int colour2){
