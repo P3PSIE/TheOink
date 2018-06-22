@@ -1,0 +1,18 @@
+{
+    "_comment": [
+        "Craft Oink Iron Dust from Iron Ingots"
+    ],
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "theoink:oink_basic_crusher",
+            "data":32767
+        },
+        {
+            "item": "minecraft:iron_ingot"
+        }
+    ],
+    "result": {
+        "item": "theoink:oink_iron_dust"
+    }
+}

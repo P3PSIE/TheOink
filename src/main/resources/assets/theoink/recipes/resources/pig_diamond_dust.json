@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "theoink:oink_minced_pork"
+        },
+        {
+            "item": "theoink:oink_diamond_dust"
+        }
+    ],
+    "result": {
+        "item": "theoink:oink_pig_diamond_dust"
+    }
+}

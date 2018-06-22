@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "theoink:oink_diamond"
+        },
+        {
+            "item": "theoink:oink_basic_crusher_gold",
+            "data": 32767
+        }
+    ],
+    "result": {
+        "item": "theoink:oink_pig_diamond_dust"
+    }
+}

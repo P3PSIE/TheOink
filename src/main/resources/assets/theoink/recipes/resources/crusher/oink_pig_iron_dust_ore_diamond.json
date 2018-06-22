@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "pigirondust",
+    "ingredients": [
+        {
+            "item": "theoink:oink_basic_crusher_diamond",
+            "data":32767
+        },
+        {
+            "item": "theoink:oink_iron_ore"
+        }
+    ],
+    "result": {
+        "item": "theoink:oink_pig_iron_dust"
+    }
+}

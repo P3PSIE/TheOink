@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "pigirondust",
+    "ingredients": [
+        {
+            "item": "theoink:oink_minced_pork"
+        },
+        {
+            "item": "theoink:oink_iron_dust"
+        }
+    ],
+    "result": {
+        "item": "theoink:oink_pig_iron_dust"
+    }
+}
