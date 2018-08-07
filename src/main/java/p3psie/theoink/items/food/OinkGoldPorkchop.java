@@ -7,6 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -18,19 +19,35 @@ import java.util.List;
 
 public class OinkGoldPorkchop extends OinkFoodBase {
 
-    protected int effectsTimer = OinkConfig.FOOD.effectTime;
+    private final PotionEffect[] effects;
 
     public OinkGoldPorkchop(String name, String oreName, int hunger, float saturation, boolean isWolfFood) {
         super(name, oreName, hunger, saturation, isWolfFood);
+
+
+
+        effects = new PotionEffect[OinkConfig.FOOD.goldPorkchopEffects.length];
+        for(int i = 0; i < OinkConfig.FOOD.goldPorkchopEffects.length; i++) {
+            String[] split = OinkConfig.FOOD.goldPorkchopEffects[i].split(",");
+            Potion potion = Potion.getPotionFromResourceLocation(split[0]);
+            if(potion == null) continue;
+            int duration, power;
+            try {
+                duration = Integer.parseInt(split[1]);
+                power = Integer.parseInt(split[2]);
+            }catch (NumberFormatException e){
+                continue;
+            }
+            PotionEffect effect = new PotionEffect(potion, duration, power, false, false);
+            effects[i] = effect;
+        }
     }
 
     @Override
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
-        player.addPotionEffect(new PotionEffect(MobEffects.RESISTANCE, effectsTimer, 0, false, false));
-        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, effectsTimer, 0, false, false));
-        player.addPotionEffect(new PotionEffect(MobEffects.HASTE, effectsTimer, 0, false, false));
-        player.addPotionEffect(new PotionEffect(MobEffects.SPEED, effectsTimer, 0, false, false));
-        player.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION,effectsTimer, 0, false, false));
+        for(PotionEffect effect : effects){
+            player.addPotionEffect(new PotionEffect(effect));
+        }
     }
 
     @Override

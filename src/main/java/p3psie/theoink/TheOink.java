@@ -17,11 +17,8 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import p3psie.theoink.commands.CommandsOink;
-import p3psie.theoink.init.OinkBlocks;
-import p3psie.theoink.init.OinkItems;
-import p3psie.theoink.init.OinkSmeltingRecipes;
-import p3psie.theoink.init.OinkTab;
-import p3psie.theoink.potions.OinkFly;
+import p3psie.theoink.init.*;
+import p3psie.theoink.potions.OinkFlight;
 import p3psie.theoink.proxy.CommonProxy;
 import p3psie.theoink.world.OinkDungeon;
 import p3psie.theoink.world.OinkWorldGen;
@@ -39,7 +36,7 @@ public class TheOink {
 
 
     //Potions
-    public static Potion OINK_FLY;
+    public static Potion OINK_FLIGHT;
 
     @Instance
     public static TheOink instance;
@@ -51,7 +48,10 @@ public class TheOink {
 
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event){ proxy.preInit(); }
+    public void preInit(FMLPreInitializationEvent event){
+        proxy.preInit();
+        OinkCapabilities.regCapabilities();
+    }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
@@ -59,7 +59,7 @@ public class TheOink {
         OinkSmeltingRecipes.init();
         OinkSmeltingRecipes.oreInit();
 
-        OINK_FLY = new OinkFly(false, 2, "oinkfly").setIconIndex(0, 0);
+        OINK_FLIGHT = new OinkFlight(false, 2, "oink_flight").setIconIndex(0, 0);
     }
 
     @EventHandler

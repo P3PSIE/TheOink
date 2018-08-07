@@ -1,16 +1,18 @@
 package p3psie.theoink.init;
 
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.item.Item.*;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.registries.IForgeRegistry;
 import p3psie.theoink.TheOink;
-import p3psie.theoink.items.OinkArmorBase;
-import p3psie.theoink.items.OinkItemBase;
-import p3psie.theoink.items.OinkItemOre;
-import p3psie.theoink.items.OinkWand;
+import p3psie.theoink.config.OinkConfig;
+import p3psie.theoink.items.*;
 import p3psie.theoink.items.food.*;
 import p3psie.theoink.items.tools.*;
 
@@ -32,7 +34,13 @@ public class OinkItems {
     //Items
     public static OinkItemBase OINK_DIAMOND = new OinkItemBase("oink_diamond");
     public static OinkItemBase OINK_STAR = new OinkItemBase("oink_star");
-    public static OinkCarrots OINK_DIAMOND_CARROT = new OinkCarrots("oink_diamond_carrot", 20);
+
+
+    //Carrots
+    public static OinkCarrots OINK_IRON_CARROT = new OinkCarrots("oink_iron_carrot", "oinkIronCarrot", 3, 0.3f, false, OinkConfig.PIGS.ironCarrotsQTY);
+    public static OinkCarrots OINK_GOLD_CARROT = new OinkCarrots("oink_gold_carrot", "oinkGoldCarrot", 4, 0.8f, false, OinkConfig.PIGS.goldCarrotsQTY);
+    public static OinkCarrots OINK_DIAMOND_CARROT = new OinkCarrots("oink_diamond_carrot", "oinkDiamondCarrot", 8, 1.0f, false, OinkConfig.PIGS.diamondCarrotsQTY);
+
 
     //Dusts
     public static OinkItemOre OINK_IRON_DUST = new OinkItemOre("oink_iron_dust", "oinkIronDust");
@@ -116,6 +124,10 @@ public class OinkItems {
     public static OinkArmorBase OINK_DIAMOND_LEGGINGS = new OinkArmorBase("oink_diamond_leggings", false, OINK_DIAMOND_ARMOR, 2, EntityEquipmentSlot.LEGS);
     public static OinkArmorBase OINK_DIAMOND_BOOTS = new OinkArmorBase("oink_diamond_boots", false, OINK_DIAMOND_ARMOR, 1, EntityEquipmentSlot.FEET);
 
+    //Crops
+    //Pork Crop
+    public static OinkSeeds OINK_PORK_SEED = new OinkSeeds("oink_pork_seed",OinkBlocks.OINK_PORK_CROP, Blocks.FARMLAND);
+
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
@@ -130,6 +142,10 @@ public class OinkItems {
                 //MISC ITEMS
                 OINK_DIAMOND,
                 OINK_STAR,
+
+                //CARROTS
+                OINK_IRON_CARROT,
+                OINK_GOLD_CARROT,
                 OINK_DIAMOND_CARROT,
 
                 //DUSTS
@@ -203,7 +219,10 @@ public class OinkItems {
                 OINK_DIAMOND_HELMET,
                 OINK_DIAMOND_CHESTPLATE,
                 OINK_DIAMOND_LEGGINGS,
-                OINK_DIAMOND_BOOTS
+                OINK_DIAMOND_BOOTS,
+
+                //Crops
+                OINK_PORK_SEED
         );
     }
 
@@ -219,6 +238,10 @@ public class OinkItems {
         //MISC ITEMS
         OINK_DIAMOND.registerModels();
         OINK_STAR.registerModels();
+
+        //CARROTS
+        OINK_IRON_CARROT.registerModels();
+        OINK_GOLD_CARROT.registerModels();
         OINK_DIAMOND_CARROT.registerModels();
 
         //DUSTS
@@ -294,5 +317,8 @@ public class OinkItems {
         OINK_DIAMOND_CHESTPLATE.registerModels();
         OINK_DIAMOND_LEGGINGS.registerModels();
         OINK_DIAMOND_BOOTS.registerModels();
+
+        //Crops
+        OINK_PORK_SEED.registerModels();
     }
 }

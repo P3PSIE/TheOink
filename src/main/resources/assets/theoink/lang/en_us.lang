@@ -7,9 +7,18 @@ oinkwand.strings.nonspawn=Sorry Bacon and Sausage can only spawn in the Overworl
 #*******Tab Config*******
 itemGroup.theoink=The Oink
 theoink.config.title=The Oink Config
+theoink.general.food.ironporkchopeffects=Iron Porkchop Effects
+theoink.general.food.goldporkchopeffects=Gold Porkchop Effects
+theoink.general.food.diamondporkchopeffects=Diamond Porkchop Effects
+theoink.general.food.ultimateporkchopeffects=Ultimate Porkchop Effects
 
 #*******Misc*******
 press.for.info.name=Press %s for more information
+
+#*******Carrots********
+item.oink_iron_carrot.name=Oink Iron Carrot
+item.oink_gold_carrot.name=Oink Gold Carrot
+item.oink_diamond_carrot.name=Oink Diamond Carrot
 
 #*******Ingots********
 item.oink_iron_ingot.name=Oink Iron Ingot
@@ -120,7 +129,7 @@ item.oink_diamond_boots.name=Oink Diamond Boots
 item.pork_Seed.name=Pork Seed
 
 #*******Potions********
-oinkfly=Oink Flight
+oink_flight=Oink Flight
 
 #*******Commands********
 commands.theoink.usage=/oink

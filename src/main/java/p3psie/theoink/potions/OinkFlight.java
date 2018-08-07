@@ -1,7 +1,6 @@
 package p3psie.theoink.potions;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
@@ -11,11 +10,11 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import p3psie.theoink.TheOink;
 
 @Mod.EventBusSubscriber
-public class OinkFly extends Potion {
+public class OinkFlight extends Potion {
     private static final ResourceLocation icon = new ResourceLocation(TheOink.MODID,"textures/gui/oink_flight.png");
     public String name;
 
-    public OinkFly(boolean isBadEffectIn, int liquidColorIn, String name) {
+    public OinkFlight(boolean isBadEffectIn, int liquidColorIn, String name) {
         super(isBadEffectIn, liquidColorIn);
         this.setPotionName(name);
         this.setRegistryName(name);
@@ -50,7 +49,7 @@ public class OinkFly extends Potion {
     public static void onFlight(TickEvent.PlayerTickEvent e) {
         boolean flight = false;
 
-        if(e.player.isPotionActive(TheOink.OINK_FLY))
+        if(e.player.isPotionActive(TheOink.OINK_FLIGHT))
         flight = true;
 
         if(flight || e.player.isCreative() || e.player.isSpectator()){
